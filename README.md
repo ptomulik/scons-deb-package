@@ -32,14 +32,14 @@ the top-level directory.
 
 For ``api-doc`` you'll need at least these debian packages:
 
-    * python-epydoc
-    * python-docutils
-    * python-pygments
+  * python-epydoc
+  * python-docutils
+  * python-pygments
 
 For ``user-doc`` you'll need at least following debian packages:
 
-    * xsltproc
-    * docbook5-xml
+  * xsltproc
+  * docbook5-xml
 
 To generate API documentation, go to the top-level of downloaded source tree
 and type
