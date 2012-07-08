@@ -9,19 +9,20 @@ DOWNLOAD AND INSTALL
 
 You may download and unpack source tarball
     
-    user@host:$ cd /tmp
-    user@host:$ wget https://github.com/ptomulik/scons-deb-package/tarball/master -O scons-deb-package.tar.gz
-    user@host:$ tar -xzf scons-deb-package.tar.gz
+  user@host:$ rm -r /tmp/*scons-deb-package*
+  user@host:$ cd /tmp
+  user@host:$ wget https://github.com/ptomulik/scons-deb-package/tarball/master -O scons-deb-package.tar.gz
+  user@host:$ tar -xzf scons-deb-package.tar.gz
 
 or clone the repository
 
-    user@host:$ cd /tmp
-    user@host:$ git clone git://github.com/ptomulik/scons-deb-package.git
+  user@host:$ cd /tmp
+  user@host:$ git clone git://github.com/ptomulik/scons-deb-package.git
 
 To install ``SConsDebPackage`` locally in your project, copy the directory
 ``SConsDebPackage`` to your project's ``site_scons/``
 
-    user@host:$ cp -r /tmp/*scons-deb-package*/SConsDebPackage myproj/site_scons/
+  user@host:$ cp -r /tmp/*scons-deb-package*/SConsDebPackage myproj/site_scons/
 
 DOCUMENTATION
 -------------
