@@ -41,8 +41,8 @@ For ``user-doc`` you'll need at least following debian packages:
   * xsltproc
   * docbook5-xml
 
-To generate API documentation, go to the top-level of downloaded source tree
-and type
+To generate API documentation, go to the top-level directory of downloaded
+source tree and type
 
     user@host:$ scons api-doc
 
@@ -51,6 +51,16 @@ To generate user's documentation (including manual), type
     user@host:$ scons user-doc
 
 The generated documentation is placed under ``build/doc/`` directory.
+
+RUNNING EXAMPLES
+----------------
+
+RUNNING TEST
+------------
+
+To run unit tests enter the top-level directory of source tree and type
+
+    user@host:$ scons unittest
 
 LICENSE
 -------
