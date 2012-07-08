@@ -1,7 +1,7 @@
 SConsDebPackage
 ===============
 
-Debian packaging facility. This package allows you to define and generate
+Debian packaging facility. This package allows you to create and maintain
 debian packages for your SCons-based project.
 
 DOWNLOAD AND INSTALL
@@ -19,9 +19,9 @@ or clone the repository
     user@host:$ git clone git://github.com/ptomulik/scons-deb-package.git
 
 To install ``SConsDebPackage`` locally in your project, copy the directory
-``SCOnsDebPackage`` to your project's ``site_scons/``
+``SConsDebPackage`` to your project's ``site_scons/``
 
-    user@host:$ cp -r /tmp/scons-deb-package/SConsDebPackage myproj/site_scons/
+    user@host:$ cp -r /tmp/*scons-deb-package*/SConsDebPackage myproj/site_scons/
 
 DOCUMENTATION
 -------------
@@ -30,19 +30,21 @@ There are two kind of documentation provided: ``api-doc`` (for developers) and
 ``user-doc`` (actually, for developers too :)). Each one may be generated from
 the top-level directory. 
 
-For ``api-doc`` you'll need at least
+For ``api-doc`` you'll need at least these debian packages:
 
-    * epydoc (python-epydoc) <http://epydoc.sourceforge.net/>
+    * python-epydoc
+    * python-docutils
+    * python-pygments
+
+For ``user-doc`` you'll need at least following debian packages:
+
+    * xsltproc
+    * docbook5-xml
 
 To generate API documentation, go to the top-level of downloaded source tree
 and type
 
     user@host:$ scons api-doc
-
-For ``user-doc`` you'll need at least
-
-    * xsltproc
-    * docbook5-xml
 
 To generate user's documentation (including manual), type
 
